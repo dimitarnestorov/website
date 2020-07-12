@@ -48,9 +48,17 @@ export default function Depiction({ children, name, subtitle, github }) {
 			</Section>
 			<Links>
 				{[
-					{ icon: '/assets/link-icons/PayPal.png', label: 'PayPal', href: 'https://www.paypal.me/' },
+					{
+						icon: '/assets/link-icons/PayPal.png',
+						label: 'PayPal',
+						href: 'https://www.paypal.me/DimitarNestorov',
+					},
 					{ icon: '/assets/link-icons/Discord.png', label: 'Discord', href: '/discord' },
-					{ icon: '/assets/link-icons/Twitter.png', label: 'Twitter', href: 'https://twitter.com/' },
+					{
+						icon: '/assets/link-icons/Twitter.png',
+						label: 'Twitter',
+						href: 'https://twitter.com/dimitarnestorov',
+					},
 					{ icon: '/assets/link-icons/GitHub.png', label: 'GitHub', href: github },
 				]}
 			</Links>
