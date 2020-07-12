@@ -12,5 +12,8 @@ module.exports = {
 				{ source: '/./api/(.*)', destination: '/api/$1' },
 			]
 		},
+		async redirects() {
+			return [{ source: '/discord', destination: 'https://discord.gg/caPYtsN', permanent: false }]
+		},
 	},
 }
