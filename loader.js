@@ -168,9 +168,15 @@ module.exports = async function () {
 		md5Table[p.meta.MD5sum] = p.url
 	}
 
-	return `export const packages = ${JSON.stringify(restructuredPackages)};
+	const result = `export const packages = ${JSON.stringify(restructuredPackages)};
 export const md5Table = ${JSON.stringify(md5Table)};
 export const name = ${JSON.stringify(repo.name)};
 export const description = ${JSON.stringify(repo.description)};
 export const icons = ${JSON.stringify(repo.icons)};`
+
+	if (this.mode === 'production') {
+		console.log(result)
+	}
+
+	return result
 }
