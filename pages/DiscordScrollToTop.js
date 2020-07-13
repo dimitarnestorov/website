@@ -8,11 +8,21 @@ export default function DiscordScrollToTop() {
 			subtitle="Scroll to the top in Discord by tapping the status bar"
 		>
 			<style jsx>{`
+				img {
+					max-width: 100%;
+					width: 320px;
+					display: block;
+					margin: 0 auto;
+					border-radius: 5px;
+				}
+
 				ul {
 					margin-top: -10px;
 					margin-bottom: 0;
 				}
 			`}</style>
+
+			<img src="/assets/DiscordScrollToTop/showcase.gif" alt="DiscordScrollToTop showcase" />
 
 			<p>No options to configure.</p>
 
