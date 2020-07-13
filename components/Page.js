@@ -6,6 +6,12 @@ export default function Page({ children, title }) {
 	return (
 		<>
 			<Head>
+				<script async src="https://www.googletagmanager.com/gtag/js?id=UA-132372257-1" />
+				<script
+					dangerouslySetInnerHTML={{
+						__html: `window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-132372257-1');`,
+					}}
+				/>
 				<title>{title ? `${title} - ${repoName}` : repoName}</title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
